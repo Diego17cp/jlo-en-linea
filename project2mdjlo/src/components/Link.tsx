@@ -7,7 +7,7 @@ export interface LinkProps {
 export const Link = ({ icon, title, desc, href }: LinkProps) => {
 	return (
 		<div className="link-item">
-			<a href={href}>
+			<a href={href} className="link">
 				<i className={icon} />
 			</a>
 			<div className="link-content">
