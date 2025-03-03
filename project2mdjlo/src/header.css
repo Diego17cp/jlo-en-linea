@@ -24,8 +24,8 @@
 }
 
 .logo {
-  height: 60px;
-  width: auto;
+  height: 100px;
+  width: 80px;
 }
 
 .titulo {
@@ -55,20 +55,34 @@
   background-color: #425a70;
 }
 
-/* 🔹 RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .contenedor {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 10px 20px;
   }
 
   .logo-titulo {
-    flex-direction: column;
+    flex-direction: row; 
     align-items: center;
+    gap: 10px;
+  }
+
+  .titulo {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    max-width: 150px;
+    text-align: left;
+    white-space: normal;
   }
 
   .contenedor-boton {
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .boton-secundario {
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 }
