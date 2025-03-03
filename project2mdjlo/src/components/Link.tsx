@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { colors } from "../utils";
 export interface LinkProps {
 	icon: string;
@@ -6,8 +7,8 @@ export interface LinkProps {
 	href: string;
 }
 
-const randomColor = colors[Math.floor(Math.random() * colors.length)]
 export const Link = ({ icon, title, desc, href }: LinkProps) => {
+	const [randomColor] = useState<string>(colors[Math.floor(Math.random() * colors.length)]);
 	return (
 		<div className="link-item">
 			<a href={href} className="link" style={{
