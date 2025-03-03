@@ -47,6 +47,7 @@
 }
 .link-content h3{
   color: var(--secondary-color);
+  font-family: var(--titles);
 }
 .link-item:hover .link {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
