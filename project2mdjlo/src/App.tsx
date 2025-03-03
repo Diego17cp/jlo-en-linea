@@ -4,10 +4,12 @@ import { LinkList } from "./components/LinkList";
 import "./App.css";
 function App() {
 	return (
-		<div>
+		<main>
 			<Header />
-			<LinkList data={linksData} />
-		</div>
+			<section className="container-main">
+				<LinkList data={linksData} />
+			</section>
+		</main>
 	);
 }
 

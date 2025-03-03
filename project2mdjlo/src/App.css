@@ -1,14 +1,32 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+}
+main{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;  /* Cambiamos grid por flex */
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.container-main{
   padding: 2rem;
-  text-align: center;
   background-color: var(--white);
-  border-radius: 30px;
+  border-radius: 10px;
+  width: 80%;
+  min-height: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .link-list{
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
 }
 .link-item{
   background-color: transparent;
@@ -54,5 +72,5 @@
   transform: translate(0, -5px);
 }
 .link-item:hover .link-content p{
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
