@@ -10,7 +10,7 @@ export interface LinkProps {
 export const Link = ({ icon, title, desc, href }: LinkProps) => {
 	const [randomColor] = useState<string>(colors[Math.floor(Math.random() * colors.length)]);
 	return (
-		<div className="link-item">
+		<div className="link-item bg-transparent p-4 flex justify-between items-center flex-col">
 			<a href={href} className={`link ${randomColor}`} target="_blank" rel="noreferrer" title={title}>
 				<i className={icon} />
 			</a>
