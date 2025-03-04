@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { sectionData } from "../utils";
+import { colors, sectionData } from "../utils";
 
 interface Section {
 	id: string;
@@ -11,6 +11,8 @@ interface Section {
 const sections: Section[] = sectionData;
 
 export const Home = () => {
+	const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
+
 	return (
 		<div className="link-list">
 			{sections.map((section) => (
@@ -19,7 +21,7 @@ export const Home = () => {
 					key={section.id}
 					className="link-item"
 				>
-					<div className="link">
+					<div className={`link ${getRandomColor()}`}>
 						<i className={section.icon}></i>
 					</div>
 					<div className="link-content">
