@@ -11,9 +11,7 @@ export const Link = ({ icon, title, desc, href }: LinkProps) => {
 	const [randomColor] = useState<string>(colors[Math.floor(Math.random() * colors.length)]);
 	return (
 		<div className="link-item">
-			<a href={href} className="link" style={{
-                color: randomColor
-            }}>
+			<a href={href} className={`link ${randomColor}`} target="_blank" rel="noreferrer" title={title}>
 				<i className={icon} />
 			</a>
 			<div className="link-content">

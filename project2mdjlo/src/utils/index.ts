@@ -1,19 +1,19 @@
 export const colors = [
-    "#3498db",
-    "#2ecc71",
-    "#9b59b6",
-    "#e74c3c",
-    "#f1c40f",
-    "#1abc9c",
-    "#34495e",
-    "#e67e22",
-    "#5DADE2",
-    "#45B39D" 
+    "text-blue-500",
+    "text-green-500",
+    "text-purple-500",
+    "text-red-500",
+    "text-yellow-500",
+    "text-teal-500",
+    "text-gray-700",
+    "text-orange-500",
+    "text-blue-400",
+    "text-green-400"
 ]
 
 export const linksData = [
     {
-        icon: "fab fa-github",
+        icon: "fa-solid fa-users-between-lines",
         title: "Github",
         desc: "My Github Profile",
         href: "https://github.com"
