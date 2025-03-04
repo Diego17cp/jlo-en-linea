@@ -63,18 +63,21 @@ export const linksData = [
 ]
 export const sectionData = [
     {
+        id: 'consultas',
         icon: "fa-solid fa-question-circle",
         title: "Consultas",
         desc: "Realiza tus consultas",
         href: "https://example.com/consultas"
     },
     {
+        id: 'tramites',
         icon: "fa-solid fa-file-alt",
         title: "Trámites",
         desc: "Gestiona tus trámites",
         href: "https://example.com/tramites"
     },
     {
+        id: 'denuncias',
         icon: "fa-solid fa-exclamation-triangle",
         title: "Denuncias",
         desc: "Presenta tus denuncias",
