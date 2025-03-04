@@ -1,4 +1,4 @@
-import { Link } from "./Link";
+import { Link } from "./LinkItem";
 interface LinkProps {
 	icon: string;
 	title: string;
