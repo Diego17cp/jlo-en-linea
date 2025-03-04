@@ -23,7 +23,7 @@ export const Home = () => {
 				>
 					<Link
 						to={`/seccion/${section.id}`}
-						className={`link ${getRandomColor()}`}
+						className={`bg-(--bg-body) text-6xl w-24 h-24 flex justify-center items-center rounded-full transition-all duration-300 ease-in-out link ${getRandomColor()}`}
 						title={section.title}
 					>
 						<i className={section.icon}></i>

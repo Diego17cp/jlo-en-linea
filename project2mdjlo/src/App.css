@@ -19,18 +19,6 @@ main{
   margin: 2rem auto;
 }
 
-.link{
-  background-color: var(--bg-body);
-  font-size: 3.5rem;
-  width: 90px;
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
 .link-content{
   display: flex;
   justify-content: center;
