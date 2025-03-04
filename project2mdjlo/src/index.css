@@ -9,6 +9,7 @@
   --titles: "Encode Sans Semi Expanded", serif;
   --font: "Asap", serif;
 }
+@import 'tailwindcss';
 html{
   background-color: var(--bg-body);
 }
