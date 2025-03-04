@@ -1,13 +1,13 @@
 import { Header } from "../components/header";
-import { linksData } from "../utils";
-import { LinkList } from "../components/LinkList";
+import { sectionsData } from "../utils";
+import { SectionList } from "../components/SectionList";
 
 export const Home = () => {
 	return (
 		<main>
 			<Header />
 			<section className="container-main">
-				<LinkList data={linksData} />
+				<SectionList data={sectionsData} />
 			</section>
 		</main>
 	);

@@ -10,7 +10,7 @@ interface SectionListProps {
     data: SectionProps[];
 }
 
-export const LinkList = ({ data }: SectionListProps) => {
+export const SectionList = ({ data }: SectionListProps) => {
     return (
         <div className="link-list">
             {data.map((link, index) => (
