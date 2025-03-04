@@ -23,7 +23,7 @@ main{
   transition: all 0.3s ease;
 }
 .link-content h3{
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.3rem);
   color: var(--secondary-color);
   font-family: var(--titles);
 }
