@@ -1,4 +1,4 @@
-import { Header } from "../components/header";
+import { Header } from "../components/Header";
 import { sectionData } from "../utils";
 import { SectionList } from "../components/SectionList";
 
