@@ -1,21 +1,21 @@
-// import "../header.css";
+import "../header.css";
 
 export const Header = () => {
 	return (
-		<header className="w-full bg-white shadow-md py-4">
-            <nav className="mx-auto px-4 md:px-2">
-                <div className="flex justify-between items-center">
-                    <div className="flex items-center gap-4">
+		<header className="header">
+            <nav className="nav-container">
+                <div className="nav-content">
+                    <a className="logo-section" href="https://www.munijlo.gob.pe/web/" target="_blank" rel="noreferrer">
                         <img 
                             src="/logo.jpeg" 
                             alt="Logo Municipal" 
-                            className="w-12 h-16 md:w-15 md:h-18 object-contain"
+                            className="nav-logo"
                         />
-                        <h3 className="flex flex-col m-0 text-secondary font-titles font-medium text-lg md:text-base">
+                        <h3 className="nav-title">
                             <span>Municipalidad Distrital de</span>
                             <span>José Leonardo Ortiz</span>
                         </h3>
-                    </div>
+                    </a>
                 </div>
             </nav>
         </header>
