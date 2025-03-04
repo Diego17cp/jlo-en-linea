@@ -11,24 +11,25 @@ interface Section {
 const sections: Section[] = sectionData;
 
 export const Home = () => {
-	const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
+	const getRandomColor = () =>
+		colors[Math.floor(Math.random() * colors.length)];
 
 	return (
 		<div className="link-list">
 			{sections.map((section) => (
-				<Link
-					to={`/seccion/${section.id}`}
-					key={section.id}
-					className="link-item"
-				>
-					<div className={`link ${getRandomColor()}`}>
+				<div className="link-item" key={section.id}>
+					<Link
+						to={`/seccion/${section.id}`}
+						className={`link ${getRandomColor()}`}
+                        title={section.title}
+					>
 						<i className={section.icon}></i>
-					</div>
+					</Link>
 					<div className="link-content">
 						<h3>{section.title}</h3>
 						<p>{section.desc}</p>
 					</div>
-				</Link>
+				</div>
 			))}
 		</div>
 	);
