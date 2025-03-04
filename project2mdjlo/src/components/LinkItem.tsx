@@ -15,8 +15,8 @@ export const Link = ({ icon, title, desc, href }: LinkProps) => {
 				<i className={icon} />
 			</a>
 			<div className="flex justify-center items-center flex-col gap-2 mt-6 link-content">
-				<h3>{title}</h3>
-				<p>{desc}</p>
+				<h3 className="m-0 text-center">{title}</h3>
+				<p className="m-0 text-center">{desc}</p>
 			</div>
 		</div>
 	);
