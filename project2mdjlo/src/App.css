@@ -57,10 +57,11 @@ main{
   margin: 0;
 }
 .link-content p {
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
   transition: all 0.3s ease;
 }
 .link-content h3{
+  font-size: clamp(1rem, 2vw, 1.5rem);
   color: var(--secondary-color);
   font-family: var(--titles);
 }
@@ -70,4 +71,12 @@ main{
 }
 .link-item:hover .link-content p{
   color: var(--primary-color);
+}
+@media screen and (max-width: 768px){
+  .link-list{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .container-main{
+    padding: 16px;
+  }
 }
