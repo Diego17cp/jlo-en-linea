@@ -11,7 +11,7 @@ interface LinkListProps {
 
 export const LinkList = ({ data }: LinkListProps) => {
 	return (
-		<div className="link-list">
+		<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8 p-4 w-full">
 			{data.map((link, index) => (
 				<Link
 					key={link.title + index}

@@ -15,7 +15,7 @@ export const Home = () => {
 		colors[Math.floor(Math.random() * colors.length)];
 
 	return (
-		<div className="link-list">
+		<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8 p-4 w-full">
 			{sections.map((section) => (
 				<div className="link-item" key={section.id}>
 					<Link
