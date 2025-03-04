@@ -1,5 +1,5 @@
 import { Header } from "../components/header";
-import { sectionsData } from "../utils";
+import { sectionData } from "../utils";
 import { SectionList } from "../components/SectionList";
 
 export const Home = () => {
@@ -7,7 +7,7 @@ export const Home = () => {
 		<main>
 			<Header />
 			<section className="container-main">
-				<SectionList data={sectionsData} />
+				<SectionList data={sectionData} />
 			</section>
 		</main>
 	);
