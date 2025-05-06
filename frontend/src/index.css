@@ -10,6 +10,13 @@
   --font: "Asap", serif;
 }
 @import 'tailwindcss';
+@theme {
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-tertiary: var(--tertiary-color);
+  --font-titles: var(--titles);
+  --font-body: var(--font);
+}
 html{
   background-color: var(--bg-body);
 }
