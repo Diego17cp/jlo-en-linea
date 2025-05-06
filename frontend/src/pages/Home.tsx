@@ -29,8 +29,8 @@ export const Home = () => {
 						<i className={section.icon}></i>
 					</Link>
 					<div className="flex justify-center items-center flex-col gap-2 mt-6 link-content">
-						<h3 className="m-0 text-center">{section.title}</h3>
-						<p className="m-0 text-center">{section.desc}</p>
+						<h3 className="m-0 text-center text-secondary font-titles">{section.title}</h3>
+						<p className="m-0 text-center transition-all duration-300 ease-in">{section.desc}</p>
 					</div>
 				</div>
 			))}
