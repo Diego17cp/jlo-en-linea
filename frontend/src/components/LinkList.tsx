@@ -6,7 +6,7 @@ interface LinkListProps {
 
 export const LinkList = ({ data }: LinkListProps) => {
 	return (
-		<div className="group grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 p-4 w-full">
+		<div className="group grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-x-12 gap-y-25 p-4 w-full">
 			{data.map((link) => (
 				<ServiceCard
 					key={link.id}
