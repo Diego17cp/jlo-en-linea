@@ -3,6 +3,7 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { useLocation } from "react-router";
 import { MainContainer } from "./MainContainer";
+import header from "../assets/header/header.png";
 
 export const Layout = () => {
 	const location = useLocation();
@@ -15,9 +16,9 @@ export const Layout = () => {
 					<picture>
 						{/* <source media="(max-width: 768px)" srcSet="/header-mobile.png" /> */}
 						<img
-							src="/header-example.jpg"
+							src={header}
 							alt="Header"
-							className="w-full h-70 object-cover"
+							className="w-full h-80 object-cover"
 						/>
 					</picture>
 				)}
