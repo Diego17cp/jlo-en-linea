@@ -1,11 +1,5 @@
 import { HeaderTopLink } from "./Header/HeaderTopLink";
-import mpv from "../assets/header/mpv.png";
-import tri from "../assets/header/tramit-icon.png";
-import logo from "../assets/header/modern-logo.png";
-import jloinline from "../assets/header/jloinline.png";
-import gobLogo from "../assets/header/gob-logo.png";
-import transparencia from "../assets/header/transparencia-logo.png";
-
+import { mpv, logo, jloinline, gobLogo, transparencia, tri,  } from "../assets/header";
 export const Header = () => {
 	return (
 		<header className="header shadow-md w-full bg-white">
