@@ -14,7 +14,7 @@ export const SectionCard = ({ id: name, title, desc, iconUrl, href } : Section) 
 				<h3 className="text-xl md:text-3xl font-semibold font-titles text-primary">
 					{title}
 				</h3>
-				<p className="">{desc}</p>
+				<p className="text-base md:text-lg">{desc}</p>
 			</div>
 		</Link>
 	);
