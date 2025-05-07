@@ -1,38 +1,20 @@
-import { Link } from "react-router";
-import { colors, sectionData } from "../utils";
-
-interface Section {
-	id: string;
-	title: string;
-	desc: string;
-	icon: string;
-}
-
+import { sectionData } from "../utils";
+import { SectionCard } from "../components/Cards/SectionCard";
+import { Section } from "../types";
 const sections: Section[] = sectionData;
 
 export const Home = () => {
-	const getRandomColor = () =>
-		colors[Math.floor(Math.random() * colors.length)];
-
 	return (
-		<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8 p-4 w-full">
+		<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8 p-4 w-full group">
 			{sections.map((section) => (
-				<div
-					className="bg-transparent p-4 flex justify-between items-center flex-col link-item"
+				<SectionCard
 					key={section.id}
-				>
-					<Link
-						to={`/seccion/${section.id}`}
-						className={`bg-(--bg-body) text-6xl w-24 h-24 flex justify-center items-center rounded-full transition-all duration-300 ease-in-out link ${getRandomColor()}`}
-						title={section.title}
-					>
-						<i className={section.icon}></i>
-					</Link>
-					<div className="flex justify-center items-center flex-col gap-2 mt-6 link-content">
-						<h3 className="m-0 text-center text-secondary font-titles">{section.title}</h3>
-						<p className="m-0 text-center transition-all duration-300 ease-in">{section.desc}</p>
-					</div>
-				</div>
+					id={section.id}
+					title={section.title}
+					desc={section.desc}
+					iconUrl={section.iconUrl}
+					href={section.href}
+				/>
 			))}
 		</div>
 	);
