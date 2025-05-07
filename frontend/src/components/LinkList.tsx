@@ -1,25 +1,20 @@
-import { Link } from "./LinkItem";
-interface LinkProps {
-	icon: string;
-	title: string;
-	href: string;
-	desc: string;
-}
+import { Section } from "../types";
+import { ServiceCard } from "./Cards/ServiceCard";
 interface LinkListProps {
-	data: LinkProps[];
+	data: Section[];
 }
 
 export const LinkList = ({ data }: LinkListProps) => {
 	return (
-		<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-8 p-4 w-full">
-			{data.map((link, index) => (
-				<Link
-					key={link.title + index}
-					icon={link.icon}
+		<div className="group grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 p-4 w-full">
+			{data.map((link) => (
+				<ServiceCard
+					key={link.id}
+					id=""
+					iconUrl={link.iconUrl}
 					title={link.title}
 					href={link.href}
-					desc={link.desc}
-				></Link>
+				></ServiceCard>
 			))}
 		</div>
 	);
