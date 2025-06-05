@@ -1,6 +1,5 @@
 import { sectionData } from "../utils";
 import { SectionCard } from "../components/Cards/SectionCard";
-import { Section } from "../types";
 const sections: Section[] = sectionData;
 
 export const Home = () => {
