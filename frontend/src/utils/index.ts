@@ -14,108 +14,108 @@ export const colors = [
 export const sectionData = [
     {
         id: 'consultas',
-        icon: "fa-solid fa-question-circle",
+        iconUrl: "/icons/consultas/consultas-logo.png",
         title: "Consultas",
         desc: "Realiza tus consultas",
-        href: "https://example.com/consultas"
+        href: "/seccion"
     },
     {
         id: 'tramites',
-        icon: "fa-solid fa-file-alt",
+        iconUrl: "/icons/tramites/tramites-logo.png",
         title: "Trámites",
         desc: "Gestiona tus trámites",
-        href: "https://example.com/tramites"
+        href: "/seccion"
     },
     {
         id: 'denuncias',
-        icon: "fa-solid fa-exclamation-triangle",
+        iconUrl: "/icons/denuncias/denuncias-logo.png",
         title: "Denuncias",
         desc: "Presenta tus denuncias",
-        href: "https://example.com/denuncias"
+        href: "/seccion"
     }
 ]
 export const linkData = {
     consultas: [
         {
             id: 'seguimiento',
-            icon: "fa-solid fa-folder-open",
+            iconUrl: "/icons/consultas/seguimiento-tramite.png",
             title: "Seguimiento de Trámite Documentario",
             desc: "Sigue el estado de tus trámites",
             href: "https://example.com/seguimiento",
         },
         {
             id: 'certificados',
-            icon: "fa-solid fa-certificate",
+            iconUrl: "/icons/consultas/certificados.png",
             title: "Certificados Emitidos",
             desc: "Consulta tus certificados emitidos",
             href: "https://example.com/certificados"
         },
         {
             id: 'documentos',
-            icon: "fa-solid fa-file",
+            iconUrl: "/icons/consultas/docs-normas.png",
             title: "Documentos y Normas",
             desc: "Accede a documentos y normas",
             href: "https://example.com/documentos"
         },
         {
             id: 'participacion',
-            icon: "fa-solid fa-users",
+            iconUrl: "/icons/consultas/participacion-vecinal.png",
             title: "Participación Vecinal",
             desc: "Participa en actividades vecinales",
             href: "https://example.com/participacion"
         },
         {
             id: 'licencia',
-            icon: "fa-solid fa-id-card",
+            iconUrl: "/icons/consultas/licencia.png",
             title: "Licencia de Funcionamiento",
             desc: "Solicita tu licencia de funcionamiento",
             href: "https://example.com/licencia"
         },
         {
             id: 'itse',
-            icon: "fa-solid fa-shield-alt",
+            iconUrl: "/icons/consultas/itse-ecse.png",
             title: "Certificado ITSE-ECSE",
             desc: "Obtén tu certificado ITSE-ECSE",
             href: "https://example.com/itse"
         },
         {
             id: 'salud',
-            icon: "fa-solid fa-heartbeat",
+            iconUrl: "/icons/consultas/certificado-salud.png",
             title: "Certificado de Salud",
             desc: "Consulta tu certificado de salud",
             href: "https://example.com/salud"
         },
         {
             id: 'agentes',
-            icon: "fa-solid fa-user-tie",
+            iconUrl: "/icons/consultas/agentes-municipales.png",
             title: "Agentes Municipales",
             desc: "Información sobre agentes municipales",
             href: "https://example.com/agentes"
         },
         {
             id: 'presupuesto',
-            icon: "fa-solid fa-coins",
+            iconUrl: "/icons/consultas/presupuesto.png",
             title: "Presupuesto Participativo",
             desc: "Participa en el presupuesto participativo",
             href: "https://example.com/presupuesto"
         },
         {
             id: 'ccl',
-            icon: "fa-solid fa-users-cog",
+            iconUrl: "/icons/consultas/ccl.png",
             title: "Consejo de Coordinación Local Distrital (CCL)",
             desc: "Información sobre el CCL",
             href: "https://example.com/ccl"
         },
         {
             id: 'juntas',
-            icon: "fa-solid fa-users",
+            iconUrl: "/icons/consultas/juntas-vecinales.png",
             title: "Juntas Vecinales",
             desc: "Participa en las juntas vecinales",
             href: "https://example.com/juntas"
         },
         {
             id: 'ruos',
-            icon: "fa-solid fa-book",
+            iconUrl: "/icons/consultas/ruos.png",
             title: "Registro Único de Organizaciones Sociales (RUOS)",
             desc: "Consulta el RUOS",
             href: "https://example.com/ruos"
@@ -124,35 +124,35 @@ export const linkData = {
     tramites: [
         {
             id: 'registro',
-            icon: "fa-solid fa-folder-plus",
+            iconUrl: "/icons/tramites/registro-tramite.png",
             title: "Registro de Trámite Documentario",
             desc: "Registra tus trámites documentarios",
             href: "https://example.com/registro"
         },
         {
             id: 'licencia',
-            icon: "fa-solid fa-id-card",
+            iconUrl: "/icons/tramites/licencia.png",
             title: "Licencia de Funcionamiento",
             desc: "Solicita tu licencia de funcionamiento",
             href: "https://example.com/licencia"
         },
         {
             id: 'subdivision',
-            icon: "fa-solid fa-map",
+            iconUrl: "/icons/tramites/subdivision-lote.png",
             title: "Subdivisión de Lote Urbano",
             desc: "Solicita la subdivisión de tu lote urbano",
             href: "https://example.com/subdivision"
         },
         {
             id: 'visacion',
-            icon: "fa-solid fa-drafting-compass",
+            iconUrl: "/icons/tramites/visacion.png",
             title: "Visación de Plano",
             desc: "Solicita la visación de tu plano",
             href: "https://example.com/visacion"
         },
         {
             id: 'reclamaciones',
-            icon: "fa-solid fa-book",
+            iconUrl: "/icons/tramites/libro-reclamaciones.png",
             title: "Libro de Reclamaciones",
             desc: "Registra tus reclamaciones",
             href: "https://example.com/reclamaciones"
@@ -161,21 +161,21 @@ export const linkData = {
     denuncias:[
         {
             id: 'ambientales',
-            icon: "fa-solid fa-leaf",
+            iconUrl: "/icons/denuncias/ambiental.png",
             title: "Denuncias Ambientales",
             desc: "Reporta problemas ambientales",
             href: "https://example.com/ambientales"
         },
         {
             id: 'corrupcion',
-            icon: "fa-solid fa-hand-holding-usd",
+            iconUrl: "/icons/denuncias/corrupcion.png",
             title: "Actos de Corrupción",
             desc: "Denuncia actos de corrupción",
             href: "https://example.com/corrupcion"
         },
         {
             id: 'violencia',
-            icon: "fa-solid fa-fist-raised",
+            iconUrl: "/icons/denuncias/violencia-familiar.png",
             title: "Violencia Familiar/Género",
             desc: "Denuncia violencia familiar o de género",
             href: "https://example.com/violencia"
