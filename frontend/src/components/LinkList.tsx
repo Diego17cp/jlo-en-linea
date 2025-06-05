@@ -1,4 +1,3 @@
-import { Section } from "../types";
 import { ServiceCard } from "./Cards/ServiceCard";
 interface LinkListProps {
 	data: Section[];
@@ -10,7 +9,6 @@ export const LinkList = ({ data }: LinkListProps) => {
 			{data.map((link) => (
 				<ServiceCard
 					key={link.id}
-					id=""
 					iconUrl={link.iconUrl}
 					title={link.title}
 					href={link.href}

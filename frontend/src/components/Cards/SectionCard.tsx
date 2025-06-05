@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import { Section } from "../../types";
 
 export const SectionCard = ({ id: name, title, desc, iconUrl, href } : Section) => {
 	return (
