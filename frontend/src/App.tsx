@@ -4,6 +4,7 @@ import "./App.css";
 import { Layout } from "./components/Layouts/Layout";
 import { Section } from "./pages/Section";
 import { SectionLayout } from "./components/Layouts/SectionLayout";
+import { Consultas } from "./components/Consultas";
 function App() {
 	return (
 		<BrowserRouter>
@@ -14,6 +15,20 @@ function App() {
                         <Route index element={<Section />} />
                         <Route path=":id" element={<Section />} />
                     </Route>
+					<Route path="licencias">
+						<Route path="consulta">
+							<Route path=":id"
+								element={<Consultas />}
+							/>
+						</Route>
+					</Route>
+					<Route path="transito">
+						<Route path="consulta">
+							<Route path=":id"
+								element={<Consultas />}
+							/>
+						</Route>
+					</Route>
 				</Route>
 			</Routes>
 		</BrowserRouter>
