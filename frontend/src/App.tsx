@@ -12,22 +12,18 @@ function App() {
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />}></Route>
 					<Route path="seccion" element={<SectionLayout />}>
-                        <Route index element={<Section />} />
-                        <Route path=":id" element={<Section />} />
-                    </Route>
-					<Route path="licencias">
-						<Route path="consulta">
-							<Route path=":id"
-								element={<Consultas />}
-							/>
-						</Route>
+						<Route index element={<Section />} />
+						<Route path=":id" element={<Section />} />
 					</Route>
-					<Route path="transito">
-						<Route path="consulta">
-							<Route path=":id"
-								element={<Consultas />}
-							/>
-						</Route>
+				</Route>
+				<Route path="licencias">
+					<Route path="consulta">
+						<Route path=":id" element={<Consultas />} />
+					</Route>
+				</Route>
+				<Route path="transito">
+					<Route path="consulta">
+						<Route path=":id" element={<Consultas />} />
 					</Route>
 				</Route>
 			</Routes>
