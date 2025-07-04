@@ -25,8 +25,8 @@ export const Header = () => {
 					<div className="flex items-center w-full md:w-1/2 justify-around md:ustify-between">
 						<a
 							className="flex items-center gap-4"
-							href="#"
-							target="_blank"
+							href="/"
+							// target="_blank"
 							rel="noreferrer"
 						>
 							<img
