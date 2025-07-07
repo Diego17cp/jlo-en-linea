@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { useLocation } from "react-router";
 import { ReactNode, useEffect, useState } from "react";
 import axios from "axios";
@@ -230,12 +230,12 @@ export const Consultas = () => {
 						<p className="mt-2 text-gray-700">
 							ID consultado: {id}
 						</p>
-						<button
+						<Link
 							className="mt-4 bg-primary text-white px-4 py-2 rounded hover:bg-primary/80 w-full sm:w-auto"
-							onClick={() => window.history.back()}
+							to={"/"}
 						>
 							Volver atrás
-						</button>
+						</Link>
 					</div>
 				</div>
 			</ConsultasLayout>
@@ -566,13 +566,13 @@ export const Consultas = () => {
 						</div>
 
 						<div className="bg-gray-50 px-6 py-4 text-right">
-							<button
+							<Link
 								className="bg-primary text-white px-4 py-2 rounded hover:bg-primary/80 flex items-center justify-center inline-flex ml-auto"
-								onClick={() => window.history.back()}
+								to={"/"}
 							>
 								<i className="fas fa-arrow-left mr-2"></i>
 								Volver atrás
-							</button>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -787,13 +787,13 @@ export const Consultas = () => {
 
 						{/* Footer */}
 						<div className="bg-gray-50 px-6 py-4 text-right">
-							<button
+							<Link
 								className="bg-primary text-white px-4 py-2 rounded hover:bg-primary/80 flex items-center justify-center"
-								onClick={() => window.history.back()}
+								to="/"
 							>
 								<i className="fas fa-arrow-left mr-2"></i>
 								Volver atrás
-							</button>
+							</Link>
 						</div>
 					</div>
 				</div>
