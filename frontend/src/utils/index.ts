@@ -164,21 +164,21 @@ export const linkData = {
             iconUrl: "/icons/denuncias/ambiental.png",
             title: "Denuncias Ambientales",
             desc: "Reporta problemas ambientales",
-            href: "https://example.com/ambientales"
+            href: "https://jloenlinea.munijlo.gob.pe/seccion/denuncias/ambientales"
         },
         {
             id: 'corrupcion',
             iconUrl: "/icons/denuncias/corrupcion.png",
             title: "Actos de Corrupción",
             desc: "Denuncia actos de corrupción",
-            href: "https://example.com/corrupcion"
+            href: "https://jloenlinea.munijlo.gob.pe/seccion/denuncias/ambientales"
         },
         {
             id: 'violencia',
             iconUrl: "/icons/denuncias/violencia-familiar.png",
             title: "Violencia Familiar/Género",
             desc: "Denuncia violencia familiar o de género",
-            href: "https://example.com/violencia"
+            href: "https://jloenlinea.munijlo.gob.pe/seccion/denuncias/violencia"
         }
     ]
 }
