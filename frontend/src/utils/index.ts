@@ -164,21 +164,29 @@ export const linkData = {
             iconUrl: "/icons/denuncias/ambiental.png",
             title: "Denuncias Ambientales",
             desc: "Reporta problemas ambientales",
-            href: "https://jloenlinea.munijlo.gob.pe/seccion/denuncias/ambientales"
+            href: "https://jloenlinea.munijlo.gob.pe/denuncia-ambiental"
         },
         {
             id: 'corrupcion',
             iconUrl: "/icons/denuncias/corrupcion.png",
             title: "Actos de Corrupción",
             desc: "Denuncia actos de corrupción",
-            href: "https://jloenlinea.munijlo.gob.pe/seccion/denuncias/ambientales"
+            href: "https://jloenlinea.munijlo.gob.pe/denuncia-corrupcion"
+        },
+        {
+            id: "consumidor",
+            iconUrl: "/icons/denuncias/consumidor.png",
+            title: "Defensa del Consumidor",
+            desc: "Presenta denuncias sobre defensa del consumidor",
+            href: "https://jloenlinea.munijlo.gob.pe/denuncia-consumidor"
         },
         {
             id: 'violencia',
             iconUrl: "/icons/denuncias/violencia-familiar.png",
             title: "Violencia Familiar/Género",
             desc: "Denuncia violencia familiar o de género",
-            href: "https://jloenlinea.munijlo.gob.pe/seccion/denuncias/violencia"
+            // href: "https://jloenlinea.munijlo.gob.pe/seccion/denuncias/violencia"
+            href: "#"
         }
     ]
 }
