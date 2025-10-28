@@ -171,7 +171,7 @@ export const linkData = {
             iconUrl: "/icons/denuncias/corrupcion.png",
             title: "Actos de Corrupción",
             desc: "Denuncia actos de corrupción",
-            href: "https://jloenlinea.munijlo.gob.pe/denuncia-corrupcion"
+            href: "https://jloenlinea.munijlo.gob.pe/denuncia-actos-corrupcion"
         },
         {
             id: "consumidor",
