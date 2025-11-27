@@ -1,9 +1,11 @@
 import { Link, useParams } from "react-router";
 import { useLocation } from "react-router";
-import { ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
-import Header from "./Header";
-import { Footer } from "./Footer";
+import { ConsultasLayout } from "../layouts/ConsultasLayout";
+
+
+// TYPES
 
 export interface Licencia {
 	tipo_licencia: string;
@@ -94,15 +96,7 @@ export interface Vehiculo {
 	motor: string;
 }
 
-export const ConsultasLayout = ({ children }: { children: ReactNode }) => {
-	return (
-		<div className="flex flex-col min-h-screen w-full">
-			<Header />
-			<main className="flex-1 w-full">{children}</main>
-			<Footer />
-		</div>
-	);
-};
+
 
 export const Consultas = () => {
 	const baseUrl = import.meta.env.VITE_CONSULTAS_API_URL;
@@ -201,7 +195,7 @@ export const Consultas = () => {
 	if (isLoading) {
 		return (
 			<ConsultasLayout>
-				\{" "}
+				{" "}
 				<div className="flex flex-col items-center justify-center min-h-[60vh] w-full p-6">
 					<div className="animate-spin rounded-full h-12 w-12 border-4 border-primary border-t-transparent"></div>
 					<p className="mt-4 text-gray-600">
