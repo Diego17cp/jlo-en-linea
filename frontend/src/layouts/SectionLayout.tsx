@@ -1,5 +1,5 @@
 import { Link, Outlet, useParams } from "react-router";
-import { sectionData } from "../../utils";
+import { sectionData } from "../utils";
 
 export const SectionLayout = () => {
 	const { id } = useParams();

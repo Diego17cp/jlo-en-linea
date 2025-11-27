@@ -1,9 +1,9 @@
 import { Outlet } from "react-router";
-import { Header } from "../Header";
-import { Footer } from "../Footer";
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 import { useLocation } from "react-router";
-import { MainContainer } from "../MainContainer";
-import header from "../../assets/header/header.png";
+import { MainContainer } from "../components/MainContainer";
+import header from "../assets/header/header.png";
 
 export const Layout = () => {
 	const location = useLocation();
