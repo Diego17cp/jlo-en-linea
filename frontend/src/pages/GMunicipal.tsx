@@ -110,7 +110,7 @@ export const GMunicipal = () => {
         <ConsultasLayout>
             <div className="flex flex-col items-center w-full bg-gray-50 p-3 sm:p-6">
                 <h1 className="text-2xl sm:text-3xl font-bold text-primary mb-4 sm:mb-6 text-center">
-                    Consulta de Adjudicación Municipal
+                    Consulta de Actas de Adjudicación
                 </h1>
 
                 <div className="w-full max-w-5xl bg-white rounded-lg shadow-md overflow-hidden">
@@ -277,7 +277,7 @@ export const GMunicipal = () => {
                                         {awards.fecha_renovacion}
                                     </p>
                                 </div>
-                                {awards.estado === "REVERTIDO" && (
+                                {awards.estado === "REVERTIDO" && awards.fecha_reversion && (
                                     <div>
                                         <p className="text-sm text-gray-500">
                                             Fecha de reversión
@@ -289,7 +289,7 @@ export const GMunicipal = () => {
                                 )}
                             </div>
                         </div>
-                        {(awards.estado === "REVERTIDO" && awards.motivo_reversion) && (
+                        {(awards.estado === "REVERTIDO" && awards.motivo_reversion && awards.motivo_reversion.trim() !== "") && (
                             <div>
                                 <h3 className="text-lg font-semibold text-gray-700 mb-3">
                                     <i className="fas fa-info-circle mr-2 text-primary"></i>
