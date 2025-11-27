@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import { Home } from "./pages/Home";
 import "./App.css";
-import { Layout } from "./components/Layouts/Layout";
+import { Layout } from "./layouts/Layout";
 import { Section } from "./pages/Section";
-import { SectionLayout } from "./components/Layouts/SectionLayout";
-import { Consultas } from "./components/Consultas";
-import { NotFound } from "./components/404";
+import { SectionLayout } from "./layouts/SectionLayout";
+import { Consultas } from "./pages/Consultas";
+import { NotFound } from "./pages/404";
+import { GMunicipal } from "./pages/GMunicipal";
 
 function App() {
     return (
@@ -35,7 +36,13 @@ function App() {
                         <Route path="*" element={<NotFound />} />
                     </Route>
                     <Route path="*" element={<NotFound />} />
-                </Route>                
+                </Route>
+                <Route path="gmunicipal">
+                    <Route path="consulta">
+                        <Route path=":id" element={<GMunicipal />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Route>
+                </Route>
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
